@@ -10,12 +10,12 @@ import { Usuario } from './clases/usuario';
 
 //la hace visible dentro del modulo en el q esta creado
 export class AppComponent {
+  title = 'Clase01';
   miUsuario: Usuario;
-  title = 'cambioTitle';
-  otraVariable = 'seteado en clase AppComponent';
   numero1: number;
   numero2: number;
   suma: number;
+  mensaje: string;
 
   /**
    *
@@ -25,17 +25,17 @@ export class AppComponent {
     this.numero2 = 0;
     this.suma = 0;
     this.miUsuario = new Usuario();
+    this.mensaje = '';
   }
   miMetodo() {
-    //this.title = 'lo cambio la funcion';
-    this.suma = this.numero1 + this.numero2;
-
-    console.log('ok');
+    this.suma = this.numero1 + this.numero2 / 2;
+    this.mensaje = 'El promedio es : ';
   }
 
   limpiar() {
-    this.title = '';
     this.numero1 = 0;
     this.numero2 = 0;
+    this.suma = 0;
+    this.mensaje = '';
   }
 }
