@@ -1,0 +1,29 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular 01</title>
+  </head>
+  <body>
+    <input type="text" [(ngModel)]="title" />
+    <input type="number" [(ngModel)]="numero1" />
+    <input type="number" [(ngModel)]="numero2" />
+    <button id="btnCalcular" (click)="miMetodo()">Calcular</button>
+    <button id="btnLimpiar" (click)="limpiar()">Limpiar</button>
+    {{ title
+    }}<!--bindeo de una sola via, solo muestra title-->
+    {{ otraVariable }}
+    {{ miUsuario.nombre }}
+    {{ "el resultado es " + suma }}
+  </body>
+</html>
